@@ -1,68 +1,200 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />-->
-    <meta name="renderer" content="webkit|ie-stand" />
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://likeyoumall.chendind.com/web/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>优享贷款</title>
-    <link rel="stylesheet" href="/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/index.css">
-    <!--[if lte IE 8]>
-	<style type="text/css">
-		html,body{width:100%; height:100%; overflow:scroll}
-		.section-btn{display:none;}
-	</style>
-	<![endif]-->
+    <link rel="stylesheet" href="/swiper-3.4.2.min.css">
+    <title> 券宝宝优惠券 </title>
 </head>
+<body id="body" style="">
+    <header class="header">
+        <img src="/logo2.png" class="logo_img">
+        <span class="logo_text">券宝宝优惠券</span>
+    </header>
 
-<body>
-    <div class="container">
-        <header>
-            <p> <span id="5">联系我们</span><span id="4">贷款流程</span><span id="3">产品介绍</span><span id="2">公司简介</span><span id="1" class="onClick">首页</span> </p>
-        </header>
-        <div class="banner section1">
-            <p>优享贷款 - 借钱只要一分钟
-                <br><span>极速下款 、门槛低、速度快、额度灵活、利息低</span></p>
-        </div>
-        <div class="contant">
-            <section class="section2">
-                <h3></h3>
-                <div>优享贷款--专业个人信用业务产品
-                    <br>致力于为有借款服务需求的用户提供基于互联网大数据风控的便捷高效的信用借款服。 
-                    <br>用户可在线上移动端轻松完成信用评估、借款分期等操作。 
-                    <br>我们为都市白领搭建了一个安全、透明的互联网信用服务平台。</div>
-            </section>
-            <section class="section3">
-                <h3></h3>
-                <div></div>
-            </section>
-            <section class="section4">
-                <h3></h3>
-                <div></div>
-            </section>
-            <section class="section5">
-                <h3></h3>
-                <div>
-                    <p>yxdk@gu618.com&nbsp;&nbsp;&nbsp;&nbsp;服务时间：9:00-18:00</p>
-                    <p>地点: </p>
-                </div>
-            </section>
-        </div>
-        <footer> Copyright © 优享贷款 all rights reserved </footer>
+    <!-- 导航栏 -->
+    <div class="nav-wrap">
+        <nav id="nav" class="nav">
+            <ul class="nav-list fix-top">
+                <li class="page-index" onclick="autoScroll(&#39;index&#39;)">首页</li>
+                <li class="page-product" onclick="autoScroll(&#39;product&#39;)">产品展示</li>
+                <li class="page-compay" onclick="autoScroll(&#39;company&#39;)">公司简介</li>
+                <li class="page-contact" onclick="autoScroll(&#39;contact&#39;)">联系我们</li>
+            </ul>
+        </nav>
     </div>
-    <script src="/jquery.js"></script>
-    <script>
-        $('header span').on('click', function() {
-            var id = $(this).attr('id');
-            $(this).addClass('onClick').siblings('span').removeClass('onClick');
-            $('#section' + id).scrollTop();
-            var scrollNum = $('.section' + id).offset().top - 100;
-            $("html,body").animate({
-                scrollTop: scrollNum
-            }, 500);
+
+    <!-- 轮播图  -->
+    <section class="part3 swiper-container swiper-container-horizontal" id="swiper">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+            <!-- <div class="swiper-slide slide swiper-slide-prev" style="background-image: url(&quot;./source/swipe1.png&quot;); width: 1272px;">
+                <p class="slogan-left">任性随你</p>
+                <p class="slogan-right">想花就花</p>
+            </div> -->
+            <div class="swiper-slide slide swiper-slide-active" style="background-image: url(&quot;./source/swipe2.png&quot;); width: 1519px;">
+                <h2 class="welcome">欢迎使用券宝宝优惠券</h2>
+                <!-- <h2>无需面签，全程线上审核，最快当天到账</h2> -->
+            </div>
+            <div class="swiper-slide slide swiper-slide-next" style="background-image: url(&quot;./source/swipe2.png&quot;); width: 1519px;">
+                <h2 class="welcome">欢迎使用券宝宝优惠券</h2>
+                <!-- <h2>无需面签，全程线上审核，最快当天到账</h2> -->
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+    </section>
+
+    <main class="main">
+        <!-- 产品说明 -->
+        <section class="product1">
+            <h2 class="slogan">大牌折扣 好货抄底</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-bg">
+                        <span class="feature-content">使用简单</span>
+                        <i class="triangle-down"></i>
+                    </div>
+                    <!-- <p class="feature-note">一次注册</p> -->
+                    <p class="feature-note">指尖点点就购了</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-bg">
+                        <span class="feature-content">快速服务</span>
+                        <i class="triangle-down"></i>
+                    </div>
+                    <!-- <p class="feature-note">最快当天完成</p> -->
+                    <p class="feature-note">今日购明日达</p>
+                </div>
+                <!-- <div class="feature">
+                    <div class="feature-bg">
+                        <span class="feature-content">操作灵活</span>
+                        <i class="triangle-down"></i>
+                    </div>
+                    <p class="feature-note">一键操作</p>
+                </div> -->
+                <div class="feature">
+                    <div class="feature-bg">
+                        <span class="feature-content">品类齐全</span>
+                        <i class="triangle-down"></i>
+                    </div>
+                    <p class="feature-note">数码、家具、鞋包...</p>
+                </div>
+                
+                
+            </div>
+        </section>
+    
+        <!--  产品说明2 -->
+        <section class="product2">
+            <h2 class="head">产品展示</h2>
+            <div class="screens">
+                <!-- <div class="screen">
+                    <img src="./source/引导1.png" alt="">
+                </div>
+                <div class="screen">
+                    <img src="./source/引导2.png" alt="">
+                </div>
+                <div class="screen">
+                    <img src="./source/引导3.png" alt="">
+                </div>
+                <div class="screen">
+                    <img src="./source/启动页.png" alt="">
+                </div> -->
+                <div class="screen">
+                    <img src="/mall1.jpg" alt="">
+                </div>
+                <div class="screen">
+                    <img src="/mall2.jpg" alt="">
+                </div>
+                <div class="screen">
+                    <img src="/mall3.jpg" alt="">
+                </div>            
+            </div>
+
+            <!-- <h2 class="head">常见问题</h2>
+            <ul class="QA">
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么APP显示年龄不符?</div>
+                    <div class="item-A">A: 我们公司产品限制年龄段为18～30岁才能申请，您未在范围内！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么身份证审核打回显示地区不符?</div>
+                    <div class="item-A">A: 您所在的地区我们公司暂未开通，所以您暂时可能无法使用！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么手机注册的验证码接受不到或者无效?</div>
+                    <div class="item-A">A: 您可以联系客服问其拿到正确的验证码！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么账号和服务密码是正确的却登录不了?</div>
+                    <div class="item-A">A: 建议您区分下大小写或者符号，或者重新安装APP！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么运营商审核的时候获取不了月账单或者通讯录?</div>
+                    <div class="item-A">A: 建议您重新卸载安装一下APP再申请，如果还是不行的话可能您暂时无法申请！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么我的运营商提示风险控制?</div>
+                    <div class="item-A">A: 运营商是电脑自动审核，如果提示风险控制可能您暂未达到系统审核标准！</div>
+                </li>
+                <li class="QA-item">
+                    <div class="item-Q">Q: 为什么我的身份证或支付宝审核那么久还未审核到?</div>
+                    <div class="item-A">A: 由于我司客户量大，所以审核会慢一点，请您耐心等待！</div>
+                </li>
+            </ul> -->
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer-wrap">
+        <div class="footer">
+            <h2 class="title">Ralph Raman</h2>
+            <p>
+                    券宝宝优惠券，凭借雄厚的专业实力、丰富的项目经验和强大的科技支撑，形成了高效的商城体系，拥有精准的数据挖掘能力和较强的场景建模实力。同时，基于不同消费者的实际需求，为其提供专业的一体化购物解决方案，促进交易、减少信息不对称、提高买家满意度。 “专业、高效、敬业、合作、诚信”是我们的理念。
+            </p>
+        <br>
+            <!-- <p>联系方式：+86-4001899767</p>
+            <p>Email：lqdz2018@163.com</p> -->
+        </div>
+    </footer>
+
+<script src="/jquery-3.2.1.min.js.下载"></script>
+<script src="/swiper-3.4.2.jquery.min.js.下载"></script>
+<script>
+    window.onscroll=function()//吸顶
+    {
+        var a = document.body.scrollTop+document.documentElement.scrollTop;
+        if( a > 160 ){
+            document.getElementById("nav").classList.add('fix-top');
+        }
+        else{
+            document.getElementById("nav").classList.remove('fix-top');
+        }
+    }
+    $(document).ready(function () {
+        var swiper = new Swiper('#swiper', {
+            autoplay: 3000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
         });
-    </script>
-</body>
-</html>
+    })
+
+    function autoScroll( x ) {
+        var scrollValue = 0;
+        switch( x ) {
+            case "index" : scrollValue = 0; break;
+            case "product" : scrollValue = $('.main').offset().top; break;
+            case "company" : scrollValue = $('footer').offset().top; break;
+            case "contact" : scrollValue = $('footer').offset().top; break;
+            default: scrollValue = 0;
+        }
+        $('html').animate({scrollTop: Number(scrollValue)},1000);
+    }
+</script>
+</body></html>
